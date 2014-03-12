@@ -1,0 +1,138 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    background-image: url(phch.jpg);
+}
+
+canvas{
+    display: none;
+}
+
+body, input, a{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-weight: 100;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px 0 0 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 110;
+}
+
+.main{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    min-height: 300px;
+    border-bottom: 1px solid #aaa;
+    
+    text-align: center;
+}
+
+.main img{
+    margin: 120px 0 0 0;
+    border: 1px solid #aaa;
+/*    display: block;*/
+    
+    max-width: 90%;
+    max-height: 50%;
+}
+
+.panel{
+    bottom: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.panel input{
+    padding: 5px 10px;
+    margin: 0 20px;
+    height: 25px;
+    width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 200;
+    border: 1px solid #ccc;
+}
+
+.panel .presets{
+    margin-bottom: 50px;
+}
+
+.panel .presets a{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    
+    color: #555;
+    text-decoration: none;
+}
+
+.panel .presets a.dynamic{
+    border: 1px dashed #999;
+}
+
+.panel .presets a:hover{
+    border: 1px solid #39beea;
+    background-color: #39beea;
+    color: white;
+}
+
+button{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-image: url(chb.jpg);
+/*    background-size: 150%; */
+    background-color: white;
+    border: 1px solid #aaa;
+    margin: 0px 10px 0px 10px;
+    vertical-align: middle;
+}
+
+#buttonPresets{
+/*    background-image: url(presets.jpg) no-repeat;*/
+    background-image: none;
+    width: 30px;
+    height: 30px;
+}
+
+.panel input, button{
+    outline: none;
+}
+
+.panel input:focus, button:focus{
+    border: 1px solid #39beea;
+}
+
+.out{
+    position: absolute;
+    top: 0;
+/*    margin: 200px;*/
+    width: 100%;
+    padding: 220px 30px 0 30px;
+    padding: 220px 0px 0 0px;
+    z-index: -1;
+}
+
+.out img{
+    display: block;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
+}
