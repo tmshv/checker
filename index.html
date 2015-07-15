@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!--	<script type="text/javascript" src="checker.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="lib/jquery-2.10.min.js"></script>
+    <script src="lib/tween.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Photoshop's Checker</h1>
+    <div class="main" id="main">
+        <div class="panel">
+            <div class="presets">
+                <a href="" data-width="1" data-height="1" data-action="yourdisplay" class="dynamic">Your Display</a>
+                <a href="" data-width="100" data-height="100">100x100</a>
+                <a href="" data-width="256" data-height="256">256x256</a>
+                <a href="" data-width="1280" data-height="720">HD</a>
+                <a href="" data-width="1920" data-height="1080">Full HD</a>
+                <a href="" data-width="1280" data-height="800">MacBook</a>
+                <a href="" data-width="2880" data-height="1800">MacBook Pro 15" with Retina</a>
+                <a href="" data-width="2560" data-height="1600">MacBook Pro 13" with Retina</a>
+                <a href="" data-width="1366" data-height="768">MacBook Air 11"</a>
+                <a href="" data-width="1920" data-height="1200">Apple Cinema Display 21"</a>
+                <a href="" data-width="2560" data-height="1440">iMac 27"</a>
+            </div>
+            <button id="buttonPresets" data-rotation="0"></button>
+            <input id="inputWidth" value="256">
+            <span>x</span>
+            <!-- <span>×</span> -->
+            <input id="inputHeight" value="256">
+            <button id="buttonMake" data-rotation="0"></button>
+        </div>
+    </div>
+    
+    <div class="out" id="container">
+
+    </div>
+</body>
+</html>
